@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entraînement à l'expression écrite</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ENTRAINEMENT EXPRESSION ECRITE TEF Canada</h1>
+    <h4>SECTION B</h4>
+    <h4>Type de document : Une phrase extraite d'un journal</h4>
+    <h5>Objectif : 
+      <br>
+    Exprimer son point de vue et le justifier (200 mots minimum)</h5>
+    <h6> </h6>
+    <h6> </h6>
+    <p></p>
+    <h5>Consigne-type : 
+      <p>
+      Vous avez lu dans un journal l'affirmation suivante : 
+      'Phrase issue d'un article de journal
+      </p>
+      <p>
+        - Ecrivez une lettre au journal pour dire ce que vous en pensez (200 mots minimum)
+      </p>
+   <p>
+    - Développez au moins 3 arguments pour défendre votre point de vue. 
+   </p>
+    
+  </h5> 
+  <div class="container">
+    <div class="text-area">
+      <h2>SECTION B 
+        <br>
+    Avec l'ordinateur, les enfants n'ont plus besoin d'apprendre à écrire à la main.  
+    </h2>
+      <p>
+        
+      </p>
+      <textarea id="textarea1"></textarea>
+      <p class="word-count" id="wordCount1">Nombre de mots : 0</p>
+    </div>
+   
+    <div class="download">
+      <!-- <button id="keyboardButton">Ouvrir le clavier</button> -->
+      <button id="downloadButton" onclick="downloadContent()">Télécharger</button>
+    </div>
+    <div class="timer">
+      <p id="timer">Temps restant : 35:00</p>
+    </div>
+
+    <div class="virtual-keyboard">
+      <!-- Insérez le clavier visuel ici -->
+      <div id="keyboard">
+        <div class="key" onclick="insertCharacter('é')">é</div>
+        <div class="key" onclick="insertCharacter('è')">è</div>
+        <div class="key" onclick="insertCharacter('ê')">ê</div>
+        <div class="key" onclick="insertCharacter('ë')">ë</div>
+        <div class="key" onclick="insertCharacter('à')">à</div>
+        <div class="key" onclick="insertCharacter('â')">â</div>
+        <div class="key" onclick="insertCharacter('ä')">ä</div>
+        <div class="key" onclick="insertCharacter('î')">î</div>
+        <div class="key" onclick="insertCharacter('ï')">ï</div>
+        <div class="key" onclick="insertCharacter('ô')">ô</div>
+        <div class="key" onclick="insertCharacter('œ')">œ</div>
+        <div class="key" onclick="insertCharacter('ù')">ù</div>
+        <div class="key" onclick="insertCharacter('û')">û</div>
+        <div class="key" onclick="insertCharacter('ü')">ü</div>
+      </div>
+
+      <!-- <textarea id="textarea"></textarea> -->
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1{
+  text-align: center;
+}
+h4{
+  text-align: center;
+  color: #1d1c1c;
+}
+h5{
+  text-align: center;
+  color: #320ae2;
+}
+.align-right {
+  text-align: right;
+}
+
+.text-area {
+  margin-bottom: 20px;
+}
+
+.text-area h2 {
+  margin-top: 0;
+}
+
+.text-area textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+.word-count {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #888;
+}
+
+.download{
+  text-align: right;
+  margin-top: 20px;
+}
+
+
+.timer {
+  text-align: right;
+  margin-top: 30%;
+  position: fixed;
+  top: 30%;
+  right: 2%;
+}
+.timer p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+}
+/*     */
+
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 205px; /* Ajustez la largeur selon vos besoins */
+}
+
+.key {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.key:hover {
+  background-color: #eee;
+}
+
+.virtual-keyboard {
+  /* position: fixed; */
+  position: fixed;
+  top: 60%;
+  right: 0;
+  width: 200px; /* Ajustez la largeur selon vos besoins */
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*   */
+
+@media (max-width: 600px) {
+  .text-area textarea {
+    height: 80px;
+  }
+  .timer {
+      position: static;
+      text-align: center;
+      margin-top: 20px;
+    }
+    #keyboard {
+      width: 100%;
+  }
+  .virtual-keyboard {
+    position: static;
+    width: 100%;
+      
+  }
+}
